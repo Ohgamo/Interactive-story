@@ -1,16 +1,183 @@
-
+body {
+background-color: rgb(113, 102, 85);
+}
 
 h1 {
-    margin-left: 30px;
-    margin-top: 30px;
+    font-size: 50px;
+    display: flex;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 div{
-    display: flex;
-    margin-left: 450px;
-    margin-top: 150px;
-    background-color: green;
-    stroke: black;
-    width: 800px;
-    height: 500px;
+    margin-top: 45px;
+    width: 50%;
+      position: absolute;
+    right: 450px;
 }
+
+
+    
+a {
+    display: flex;
+    font-size: 28px;
+    padding: 20px;
+}
+
+.home{
+    background-color: rgb(0, 128, 255);
+    box-shadow: rgb(0, 85, 255) 0px 0px 8px 2px;;
+    border-radius: 17px;
+    color:black;
+    width: 4.5%;
+    position: absolute;
+    right: 1560;
+    bottom: 880px;
+}
+
+.next{
+    background-color: rgb(0, 128, 255);
+    border-radius: 17px;
+    color:black;
+    width: 4.5%;
+    position: absolute;
+    right: 67;
+    bottom: 67px;    
+}
+
+.next:hover, .previous:hover, .home:hover {
+    scale: 1.2;
+    animation: zoom 0.2s ease-out forwards;
+    box-shadow: 0px 0px 10px 0px blue;
+}
+
+
+@keyframes zoom {
+  0% {
+    scale: 1;
+    
+  }
+  100% {
+    scale: 1.1;
+
+  }
+}
+
+
+.previous {
+    display: flex;
+    background-color: rgb(0, 136, 255);
+    border-radius: 17px;
+    color:black;
+    width: 6.5%;
+     position: absolute;
+    left: 67;
+    bottom: 67px;
+}
+
+.bad {
+    display: flex;
+    background-color: red;
+    border-radius: 17px;
+    color:black;
+    width: 11%;
+     position: absolute;
+    left: 640;
+    bottom: 75px;
+}
+
+.bad:hover, .previous:hover, .home:hover {
+    scale: 1.2;
+    animation: zoom 0.2s ease-out forwards;
+        box-shadow: 0px 0px 10px 0px rgb(255, 60, 0);
+}
+
+
+@keyframes zoom {
+  0% {
+    scale: 1;
+    
+  }
+  100% {
+    scale: 1.1;
+
+  }
+}
+
+.good{
+    background-color: rgb(0, 128, 255);
+    border-radius: 17px;
+    color:black;
+    /* width: 5.5%; */
+    position: absolute;
+    right: 670;
+    bottom: 75px;
+}
+
+.good:hover, .previous:hover, .home:hover {
+    scale: 1.2;
+    animation: zoom 0.2s ease-out forwards;
+    box-shadow: 0px 0px 10px 0px blue;
+}
+
+
+@keyframes zoom {
+  0% {
+    scale: 1;
+    
+  }
+  100% {
+    scale: 1.1;
+
+  }
+}
+
+.games {
+    background-color: rgb(0, 128, 255);
+    box-shadow:rgb(8, 74, 197) 0px 0px 10px 1px;
+    border-radius: 17px;
+    color:black;
+    width: 5.5%;
+    position: absolute;
+    right: 850;
+    bottom: 75px;
+}
+
+.sleep{
+    background-color: rgb(0, 128, 255);
+    box-shadow:rgb(8, 74, 197) 0px 0px 10px 1px;
+    border-radius: 17px;
+    color:black;
+    width: 5.5%;
+    position: absolute;
+    right: 600;
+    bottom: 75px;
+}
+
+#greenman{
+    display: flex;
+    justify-items: center;
+    width: 100px;
+     position: absolute;
+    right: 850px;
+    top: 350px;
+}
+
+#redman{
+    width: 100px;   
+    position: absolute;
+    right: 400px;
+    top: 300px;
+}
+
+.text {
+    background-color: green;
+    box-shadow: black 0px 0px 0px 3.5px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
