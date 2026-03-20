@@ -121,9 +121,10 @@ a {
     background-color: red;
     border-radius: 17px;
     color:black;
-    width: 11%;
+    width: auto;
+
      position: absolute;
-    left: 640;
+    left: 550;
     bottom: 75px;
       font-family: "Averia";
 }
@@ -176,26 +177,34 @@ a {
 
 .games {
     background-color: rgb(0, 128, 255);
-    box-shadow:rgb(8, 74, 197) 0px 0px 10px 1px;
     border-radius: 17px;
     color:black;
-    width: 5.5%;
+    width:auto;
     position: absolute;
-    right: 850;
+    right: 960;
     bottom: 75px;
       font-family: "Averia";
 }
 
 .sleep{
     background-color: rgb(0, 128, 255);
-    box-shadow:rgb(8, 74, 197) 0px 0px 10px 1px;
     border-radius: 17px;
     color:black;
-    width: 5.5%;
+    width: auto;
     position: absolute;
-    right: 600;
+    right: 640;
     bottom: 75px;
       font-family: "Averia";
+}
+
+.games:hover{
+        scale: 1.2;
+    animation: zoom 0.2s ease-out forwards;
+}
+
+.sleep:hover{
+        scale: 1.2;
+    animation: zoom 0.2s ease-out forwards;
 }
 
 #greenman{
