@@ -1,59 +1,93 @@
 body {
-background-color: rgb(113, 102, 85);
+background-color: rgb(75, 108, 121);
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 52.5px;
     display: flex;
-    font-family: "Alegra";
+    font-family: "Averia";
 }
 
 h2 {
     font-size: 40px;
-    font-family: "Arial, Helvetica, sans-serif";
-}
-
-div{
-    margin-top: 45px;
-    width: 50%;
-      position: absolute;
-    right: 450px;
+    font-family: "Averia";
 }
 
 
     
 a {
     display: flex;
-    font-size: 28px;
+    font-size: 30px;
     padding: 20px;
+    text-decoration: none;
+    align-items: center;
+    font-family: "Luckiest Guy";
+    width: auto;
 }
 
 .home{
-    background-color: rgb(0, 128, 255);
-    box-shadow: rgb(0, 85, 255) 0px 0px 8px 2px;;
     border-radius: 17px;
-    color:black;
-    width: 4.5%;
+    color:rgb(255, 255, 255);
+    width: auto;
     position: absolute;
-    right: 1560;
+    right: 1525px;
     bottom: 880px;
+     animation: fadeIn s;
+         background-color: grey;
+    box-shadow: white 0px 0px 5px 0px;
+    
 }
 
 .next{
-    background-color: rgb(0, 128, 255);
-    border-radius: 17px;
-    color:black;
-    width: 4.5%;
+
+    border-radius: 15px;
+    color:rgb(255, 255, 255);
+  width:auto;
     position: absolute;
     right: 67;
-    bottom: 67px;    
-    
+    bottom: 70px;    
+    animation: fadeIn 2s;
+    background-color: grey;
+    box-shadow: white 0px 0px 5px 0px;
+}
+.start{
+    font-size: 50px;
+    border-radius: 15px;
+    color:rgb(255, 255, 255);
+    background-color: rgba(128, 128, 128, 0.628);
+    position: absolute;
+    right: 840;
+    bottom: 80px;    
+    animation: fadeIn 2s;
+    box-shadow: white 0px 0px 5px 0px;
+}
+
+.start:hover {
+    scale: 1.8;
+    animation: zoom 0.1s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+.shake {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-15px); }
+  50% { transform: translateX(15px); }
+  75% { transform: translateX(-15px); }
+  100% { transform: translateX(0); }
 }
 
 .next:hover, .previous:hover, .home:hover {
     scale: 1.2;
     animation: zoom 0.2s ease-out forwards;
-    box-shadow: 0px 0px 10px 0px blue;
 }
 
 
@@ -71,13 +105,15 @@ a {
 
 .previous {
     display: flex;
-    background-color: rgb(0, 136, 255);
-    border-radius: 17px;
-    color:black;
-    width: 6.5%;
+    border-radius: 15px;
+    color:rgb(255, 255, 255);
+    width:auto;
      position: absolute;
     left: 67;
     bottom: 67px;
+     animation: fadeIn 2s;
+         background-color: grey;
+    box-shadow: white 0px 0px 5px 0px;
 }
 
 .bad {
@@ -89,12 +125,13 @@ a {
      position: absolute;
     left: 640;
     bottom: 75px;
+      font-family: "Averia";
 }
 
 .bad:hover, .previous:hover, .home:hover {
     scale: 1.2;
     animation: zoom 0.2s ease-out forwards;
-        box-shadow: 0px 0px 10px 0px rgb(255, 60, 0);
+      
 }
 
 
@@ -117,12 +154,12 @@ a {
     position: absolute;
     right: 670;
     bottom: 75px;
+      font-family: "Averia";
 }
 
 .good:hover, .previous:hover, .home:hover {
-    scale: 1.2;
+    scale: 1.5;
     animation: zoom 0.2s ease-out forwards;
-    box-shadow: 0px 0px 10px 0px blue;
 }
 
 
@@ -146,6 +183,7 @@ a {
     position: absolute;
     right: 850;
     bottom: 75px;
+      font-family: "Averia";
 }
 
 .sleep{
@@ -157,6 +195,7 @@ a {
     position: absolute;
     right: 600;
     bottom: 75px;
+      font-family: "Averia";
 }
 
 #greenman{
@@ -173,27 +212,49 @@ a {
     position: absolute;
     right: 400px;
     top: 300px;
+
+}
+
+.dizzy {
+    animation: dizzy 0.2s;
+}
+
+@keyframes dizzy {
+  0% { transform: rotate(0deg) translateX(0); }
+  25% { transform: rotate(-2deg) translateX(-3px); }
+  50% { transform: rotate(2deg) translateX(3px); }
+  75% { transform: rotate(-1deg) translateX(-2px); }
+  100% { transform: rotate(0deg) translateX(0); }
 }
 
 .text {
     background-color: green;
-    box-shadow: black 0px 0px 0px 3.5px;
+    box-shadow: black 0px 0px 0px 3px;
     padding: 20px 40px;
     display: flex;
     justify-content: center;
     place-items: center;
+
 }
 
 
+
+div{
+    margin-top: 45px;
+    width: 50%;
+      position: absolute;
+    right: 450px;
+}
+
+@font-face {
+    font-family: "Averia";
+    src: url("../fonts/Averia_Libre/AveriaLibre-Bold.ttf");
+}
 
 
 @font-face {
-    font-family: "Alegra";
-    src: url("../fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf");
+    font-family: "Luckiest Guy";
+    src: url("../fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf");
 }
 
 
-@font-face {
-    font-family: "Aveira";
-    src: url("../fonts/Alegreya_Sans\,Averia_Libre\,Dosis\,Kavoon.zip");
-}
